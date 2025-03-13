@@ -54,11 +54,15 @@ body{
     border-radius: 25px;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover,
+.nav-links li a:active,
+.nav-links li a:focus{
     color:#04ddb2;
 }
 
-.download-button:hover{
+.download-button:hover,
+.download-button:active,
+.download-button:focus{
     transition: ease-in-out;
     scale: 1.05;
 }
