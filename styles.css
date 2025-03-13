@@ -91,3 +91,41 @@ body{
         display:none;
     }  
 }
+
+.page-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company-title{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.Tour{
+    color:#04ddb2;
+}
+
+.brand-message{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.video-container{
+    max-width: 70%;
+    max-height: 60%;
+    padding: 0.8rem;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.pitch{
+    font-size: 1.5rem;
+    text-align: center;
+}
