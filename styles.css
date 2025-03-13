@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.logo-container{
+    border:2px solid pink;
+    display: inline-block;
+    width: 20px;
+    height:20px;
+}
+
+.nav-links ul{
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.nav-links li{
+    list-style: none;
+} 
+
+.nav-links li a{
+    text-decoration: none;
+    color: #767676;
+    padding: 1.5rem;
+}
+
+.download-button{
+    background-color: #04ddb2;
+    border: none;
+    font-size: 1.2rem;
+    color:white;
+    margin: 1rem;
+    padding:1rem;
+    border-radius: 25px;
+}
+
+.nav-links li a:hover{
+    color:#04ddb2;
+}
