@@ -14,12 +14,15 @@ body{
 
 .brand-title{
     font-size: 2rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .logo-container{
     border:2px solid pink;
-    display: inline-block;
+    border-radius: 4px;
     width: 20px;
     height:20px;
 }
@@ -43,13 +46,48 @@ body{
 .download-button{
     background-color: #04ddb2;
     border: none;
+    font-family: inherit;
     font-size: 1.2rem;
     color:white;
-    margin: 1rem;
+    margin: 1.2rem;
     padding:1rem;
     border-radius: 25px;
 }
 
 .nav-links li a:hover{
     color:#04ddb2;
+}
+
+.download-button:hover{
+    transition: ease-in-out;
+    scale: 1.05;
+}
+
+.toggle-button{
+    display: none; /*this changes to flex when we make the screen smaller*/ 
+    flex-direction: column;
+    justify-content: space-between;
+    width:31px;
+    height:21px;
+}
+
+.toggle-button .bar{
+    background-color:#767676;
+    height: 3px;
+    width:100%;
+    border-radius: 7px;
+}
+
+@media (max-width:600px) {
+    .toggle-button{
+        display: flex;
+        margin: 1rem;
+    }
+    .nav-links{
+        display:none;
+    }
+
+    .download-button{
+        display:none;
+    }  
 }
