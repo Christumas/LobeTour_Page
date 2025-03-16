@@ -1,9 +1,10 @@
-body{
+body,html{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -58,6 +59,7 @@ body{
 .nav-links li a:active,
 .nav-links li a:focus{
     color:#04ddb2;
+
 }
 
 .download-button:hover,
@@ -69,18 +71,22 @@ body{
 
 .toggle-button{
     display: none; /*this changes to flex when we make the screen smaller*/ 
-    flex-direction: column;
-    justify-content: space-between;
-    width:31px;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    width:40px;
     height:21px;
 }
 
-.toggle-button .bar{
-    background-color:#767676;
-    height: 3px;
-    width:100%;
-    border-radius: 7px;
+.arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black; /* Creates a small clean down arrow */
+    transition: transform 0.3s ease;
 }
+
 
 
 
@@ -175,13 +181,32 @@ img{
 
 
 @media (max-width:600px) {
+
+
     .toggle-button{
         display: flex;
-        margin: 1rem;
+        margin: 2rem;
     }
+
     .nav-links{
-        display:none;
+        display: none;
+        width:100%; 
     }
+
+    .nav-links ul{
+        display: flex;
+        width:100%;
+ 
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+         
+    }
+
+
+
 
     .download-button{
         display:none;
@@ -199,3 +224,4 @@ img{
     }
 
 }
+
