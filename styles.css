@@ -4,6 +4,7 @@ body,html{
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
+    overflow-x: hidden;
     
 }
 
@@ -12,8 +13,6 @@ body,html{
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .brand-title{
     font-size: 2rem;
@@ -88,8 +87,6 @@ body,html{
     border-top: 6px solid black; /* Creates a small clean down arrow */
     transition: transform 0.3s ease;
 }
-
-
 
 
 .page-body{
@@ -183,33 +180,37 @@ img{
 
 
 @media (max-width:600px) {
-
-
     .toggle-button{
         display: flex;
         margin: 2rem;
     }
 
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        width:100vw;
+         
+    } 
+
     .nav-links{
         display: none; 
-        
+        width:100%;
     }
 
     .nav-links ul{
         display: flex;
         width:100%;
+        justify-content: center;
         align-items: center;
- 
+        flex-wrap: wrap;
+        line-height: 1.2rem;
     }
 
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-         
+    .nav-links ul li{
+        padding:0.5rem;
     }
-
-
-
+  
     .download-button{
         display:none;
     }  
@@ -224,6 +225,5 @@ img{
         width:100%;
 
     }
-
 }
 
