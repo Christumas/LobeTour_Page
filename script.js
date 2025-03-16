@@ -14,4 +14,12 @@ document.addEventListener("DOMContentLoaded", () =>{
             arrow.style.transform = "rotate(180deg)";
         }
     })
+    
+    window.addEventListener("resize",()=>{
+        if (window.innerWidth>600){
+            navLinks.style.display = "flex";
+            arrow.style.transform = rotate("0deg");
+        }
+    })
 })
+
