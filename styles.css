@@ -191,8 +191,7 @@ img{
     }
 
     .nav-links{
-        display: none;
-        width:100%; 
+        display: none; 
     }
 
     .nav-links ul{
